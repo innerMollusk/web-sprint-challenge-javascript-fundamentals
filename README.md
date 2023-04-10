@@ -26,13 +26,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
 
+.map creates a new array, modified according to the parameters the "mapped array" takes on from .map. This is often used to change the data in an array without overwriting the original array. .filter returns a new array that includes only those items which fit the parameters the "filtered array" takes on from .filter. This is typically used to return an array of filtered keys and values, such a "cities with populations below 100,000." .reduce returns a single value, and is typically used to return a sum or some other mathematical total of all of the values of an array. 
+
 2. Explain the difference between a callback and a higher order function.
+
+a higher order function is one which takes on other functions as parameters or returns a function. A callback function is the argument passed into higher order functions.
 
 3. Explain what a closure is.
 
+Closure is the concept that nested functions have access to the variables of their parent functions. This concept is unidirectional (inner to outer) and never the other way around. Parents cannot access the variables of their children.
+
 4. Describe the four principles of the 'this' keyword.
 
+window (global) binding is when "this" is called in the global scope and binds to the Window. implicit binding is when "this" is called within the context of a function and is bound to whatever variables exist within that scope. explicit binding is when "this" is bound to a specific object calling a function such as "ben.speak" and attaches to whatever is to the left of the dot. New binding is when "this" is attached to a prototype (i.e. Car) and is called by creating a "new Car."
+
 5. Why do we need super() in an extended class?
+
+Super allows a class to inherit the properties of its parent function and eliminates the pseudo classical practice of explicit binding syntax such as .call, .apply, or .bind
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
