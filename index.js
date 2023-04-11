@@ -17,7 +17,7 @@ function myFunction() {
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
-
+// nestedFunction can access the variable internal because it is declared in the outer scope. The concept of closure tells us that nested functions are able to access variables from the outer scope, but never the inner scope. 
 
 
 
@@ -30,10 +30,14 @@ function myFunction() {
 💡 NOTE: you may use a for loop for this function if you wish 
 */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
-
+function summation(number) {
+  let count = 0;
+  for(let i = 0; i <= number; i++) {
+    count = count + i;
   }
+  return count;
+  }
+  console.log("Task 1:", summation(4));
  
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
